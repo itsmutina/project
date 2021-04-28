@@ -1,0 +1,21 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+
+<div class = "container">
+  <br />
+  <p>Enter your crintentials in the field below and click withdraw</p>
+    <form>
+        <div class="form-group" >
+          <label for="Withdraw">Phone number</label>
+          <input type="text" class="form-control" id="withdrw" aria-describedby="emailHelp" placeholder="Enter M-pesa Number" style="width: 8cm;">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your Phone number with anyone else.</small>
+        </div>       
+      
+        <div>
+        <button onclick = "{% url 'confirmation' %}">Withdraw</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
